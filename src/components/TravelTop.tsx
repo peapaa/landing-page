@@ -1,7 +1,7 @@
 import React from "react";
 import bag from "../assets/bag-icon.png";
 import playIcon from "../assets/play-icon.png";
-import layer from "../assets/layer.jpg";
+import layer from "../assets/layer1.jpg";
 import tourism1 from "../assets/tourism1.png";
 import tourism2 from "../assets/tourism2.png";
 import tourism4 from "../assets/tourism4.png";
@@ -11,8 +11,8 @@ import location from "../assets/location-icon.png";
 
 const TravelTop: React.FC = () => {
   return (
-    <div className="pl-20 pr-10 mt-12 flex">
-      <div className="flex w-5/12 flex-col mt-24">
+    <div className="pl-28 pr-10 flex">
+      <div className="flex w-6/12 flex-col mt-24 ">
         <span className="flex px-3 py-2 w-52 text-center rounded-2xl bg-white ">
           <p className="ml-2 mr-3 font-medium text-roses">Explore the world!</p>
           <img src={bag} alt="bag-icon" className="ml-1" />
@@ -72,7 +72,7 @@ const TravelTop: React.FC = () => {
             <div className="absolute object-cover px-2 py-2 rounded-full bg-orange-500 -bottom-24 left-20">
               <img src={user} alt="user icon" />
             </div>
-            <div className="absolute object-cover px-3 py-2  bottom-10 -right-12 flex rounded-3xl bg-white text-xs flex items-center">
+            <div className="absolute object-cover px-3 py-2  bottom-10 -right-12 rounded-3xl bg-white text-xs flex items-center">
               <img src={location} alt="location icon" className="" />
               <span>Top Places</span>
             </div>

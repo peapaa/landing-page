@@ -2,7 +2,7 @@ import React from "react";
 import vector from "../assets/vector.png";
 const Header: React.FC = () => {
   return (
-    <div className="px-20 pt-10 pb-5 flex justify-between">
+    <div className="px-28 pt-10 pb-5 flex justify-between">
       <div className="flex items-center ">
         <img src={vector} alt="logo company" />
         <h1 className="font-bold ml-3 text-2xl">Travlog</h1>
