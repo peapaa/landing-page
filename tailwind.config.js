@@ -14,6 +14,7 @@ export default {
         btn: "rgb(103, 89, 217)",
         roses: "rgb(248, 94, 159)",
         orange: "rgb(255, 87, 34)",
+        pink: "rgb(253, 215, 231)",
       },
       screens: {
         mobile: { min: "300px", max: "500px" },

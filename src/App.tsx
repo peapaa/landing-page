@@ -6,10 +6,12 @@ import ServiceCompany from "./components/ServiceCompany";
 import CardReviewTravel from "./components/CardReviewTravel";
 import backgroundTop from "./assets/background-top.png";
 
-import backgroundTravelTop from "./assets/background-travel-top.png";
+import backgroundTravelTop from "./assets/layer-left.png";
 import TravelPoint from "./components/TravelPoint";
 import BestService from "./components/BestService";
 import Testimonial from "./components/Testimonial";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
   return (
@@ -26,11 +28,11 @@ const App: React.FC = () => {
         <LogoCompany />
         <ServiceCompany />
         <div
-          className="bg-no-repeat bg-cover absolute -top-32 right-0"
+          className="bg-no-repeat absolute -top-1/3 right-0 -z-10"
           style={{
             backgroundImage: `url(${backgroundTravelTop})`,
-            width: "40%",
-            height: "500px",
+            width: "500px",
+            height: "600px",
           }}
         />
       </div>
@@ -38,6 +40,8 @@ const App: React.FC = () => {
       <TravelPoint />
       <BestService />
       <Testimonial />
+      <Contact />
+      <Footer />
     </div>
   );
 };

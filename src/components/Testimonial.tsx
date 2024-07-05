@@ -33,9 +33,12 @@ const Testimonial: React.FC = () => {
           <img src={star} alt="star" className="w-7 h-7 object-cover mx-1" />
         </div>
 
-        <p className="text-base mx-52 mb-10 text-gray-500">
+        <p className="text-base  mb-3 text-gray-500">
           Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC.
+          has roots
+        </p>
+        <p className="text-base  mb-10 text-gray-500">
+          in a piece of classical Latin literature from 45 BC.
         </p>
         <div className="flex items-center justify-center">
           <img

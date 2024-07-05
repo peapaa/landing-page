@@ -5,6 +5,7 @@ import beach from "../assets/beach1.svg";
 import ocean from "../assets/ocean.svg";
 import moutain from "../assets/moutain2.svg";
 import star from "../assets/star.svg";
+import xLogo from "../assets/x-logo.png";
 
 interface cardReview {
   image: string;
@@ -61,7 +62,7 @@ const CardReviewTravel: React.FC = () => {
           </button>
         </div>
       </div>
-      <div className="flex items-center justify-center mt-6">
+      <div className="flex items-center justify-center mt-6 relative">
         {cardReviews.map((review) => (
           <div
             className="w-60 shadow-shadowCardReview even:mx-10 hover:cursor-pointer"
@@ -94,6 +95,11 @@ const CardReviewTravel: React.FC = () => {
             </div>
           </div>
         ))}
+        <img
+          src={xLogo}
+          alt="xLogo"
+          className="w-20 h-20 object-cover absolute -top-6 right-10"
+        />
       </div>
     </div>
   );

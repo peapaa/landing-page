@@ -78,14 +78,14 @@ const BestService: React.FC = () => {
             borderColor: "white",
           }}
         />
-        <button className="cursor-auto flex px-5 py-3 items-center absolute top-14 -right-10 bg-white rounded-full z-20">
+        <button className="cursor-auto flex px-5 py-3 items-center absolute top-24 right-8 bg-white rounded-full z-20">
           <img src={map} alt="map" className="w-8 h-8 object-cover" />
           <p className="font-bold text-xl ml-4">Paradise on Earth</p>
         </button>
         <img
           src={service}
           alt="service"
-          className="w-80 absolute -top-12 -right-40 -z-10 "
+          className="w-80 absolute -top-10 -right-20 -z-10 "
         />
       </div>
       <div
