@@ -76,7 +76,9 @@ const CardReviewTravel: React.FC = () => {
             <div className="px-6 py-6 flex">
               <div>
                 <p className="font-bold">{review.title}</p>
-                <p className="font-thin text-sm my-2">{review.address}</p>
+                <p className="font-thin text-sm my-2 text-gray-500">
+                  {review.address}
+                </p>
                 <p className="text-orange flex items-center">
                   <p>{review.star}</p>
                   <img

@@ -43,7 +43,7 @@ const ServiceCompany: React.FC = () => {
           <div className="w-72 px-16 py-12 mt-4 mb-10 ml-6 flex flex-col flex-none items-center justify-center rounded-xl shadow-shadowNew first:shadow-none">
             <img src={card.logo} alt={card.title} className="w-11 py-7" />
             <p className="pb-6 text-xl font-bold">{card.title}</p>
-            <p className="text-center pb-5">{card.des}</p>
+            <p className="text-center pb-5 text-gray-400">{card.des}</p>
           </div>
         ))}
       </div>

@@ -26,7 +26,7 @@ const TravelPoint: React.FC = () => {
           <p className="font-bold text-4xl mb-6">
             We helping you find your dream location
           </p>
-          <p className="font-thin mb-8">
+          <p className="font-thin mb-8 text-gray-400">
             Contrary to popular belief, Lorem Ipsum is not simply random text.
             It has roots in a piece of classical Latin literature from 45 BC.
           </p>

@@ -29,7 +29,8 @@ export default {
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
         shadowNew:
           "rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset",
-        shadowCardReview: "rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;",
+        shadowCardReview: "rgba(0, 0, 0, 0.2) 0px 60px 40px -7px",
+        shadowIcon: "rgba(0, 0, 0, 0.2) 0px 20px 40px -4px",
       },
     },
   },

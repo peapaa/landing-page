@@ -40,7 +40,7 @@ const BestService: React.FC = () => {
       <div className="w-2/5 pl-28">
         <p className="text-roses font-semibold mb-6">KEY FEATURES</p>
         <p className="font-bold text-3xl mb-6">We offer best services</p>
-        <p className="text-base font-thin mb-16">
+        <p className="text-base font-thin mb-16 text-gray-400">
           Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature from 45 BC.
         </p>
@@ -57,7 +57,7 @@ const BestService: React.FC = () => {
               />
               <div className="flex flex-col  justify-center ml-8">
                 <p className="my-5 font-bold text-xl">{service.title}</p>
-                <p className="font-thin text-sm">{service.des}</p>
+                <p className="font-thin text-sm text-gray-400">{service.des}</p>
               </div>
             </div>
           ))}
@@ -89,7 +89,7 @@ const BestService: React.FC = () => {
         />
       </div>
       <div
-        className=" bg-no-repeat flex items-center justify-between px-28 absolute top-3/4"
+        className=" bg-no-repeat absolute top-2/3 -z-10"
         style={{
           backgroundImage: `url(${backgroundWavy})`,
           width: "100%",

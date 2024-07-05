@@ -25,7 +25,7 @@ const TravelTop: React.FC = () => {
           <p className="mt-4">of the world</p>
         </div>
         <div>
-          <p className="font-thin">
+          <p className="font-thin text-gray-400">
             We always make our customer happy by providing as many choices as
             possible
           </p>
