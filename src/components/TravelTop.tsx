@@ -11,18 +11,18 @@ import location from "../assets/location-icon.png";
 
 const TravelTop: React.FC = () => {
   return (
-    <div className="pl-28 pr-10 flex">
-      <div className="flex w-6/12 flex-col mt-24 ">
+    <div className="desktop:pl-28 desktop:pr-10 flex desktop:flex-row mobile,tablet,laptop: flex-col laptop:px-28 tablet:px-10 mobile:px-5 mobile,tablet,laptop: items-center">
+      <div className="flex desktop:w-6/12 tablet,mobile: w-full, laptop:w-9/12 flex-col mt-24 ">
         <span className="flex px-3 py-2 w-52 text-center rounded-2xl bg-white ">
           <p className="ml-2 mr-3 font-medium text-roses">Explore the world!</p>
           <img src={bag} alt="bag-icon" className="ml-1" />
         </span>
-        <div className="font-bold text-6xl my-6">
-          <p className="mt-4">
-            Travel <span className="text-roses">top</span>
+        <div className="font-bold text-6xl my-6 ">
+          <p className="mt-4 ">
+            Travel <span className="text-roses"> top </span>
           </p>
-          <p className="mt-4 text-roses"> destination</p>
-          <p className="mt-4">of the world</p>
+          <p className="mt-4 text-roses"> destination </p>
+          <p className="mt-4"> of the world </p>
         </div>
         <div>
           <p className="font-thin text-gray-400">
@@ -42,8 +42,11 @@ const TravelTop: React.FC = () => {
       </div>
 
       <div
-        className="w-full bg-[length:700px_300px] bg-no-repeat bg-clip-border ml-20 mb-20 flex px-10 pt-20 items-center "
-        style={{ backgroundImage: `url(${layer})` }}
+        className="w-full bg-[length:700px_300px] desktop:bg-[length:700px_300px] desktop:overflow-hidden  bg-no-repeat bg-clip-border desktop:ml-20 my-20 flex desktop:flex-row laptop:flex-row px-10 pt-20 items-center tablet: flex-col mobile:flex-col "
+        style={{
+          backgroundImage: `url(${layer})`,
+          objectFit: "cover",
+        }}
       >
         <div className="flex flex-col ml-14 pr-8">
           <div className="relative">
@@ -59,7 +62,7 @@ const TravelTop: React.FC = () => {
           <img
             src={tourism2}
             alt="tourism2"
-            className="w-52 h-64 object-cover rounded-2xl"
+            className="w-52 h-64 object-cover rounded-2xl tablet: mb-6 mobile:mb-6  "
           />
         </div>
         <div>
@@ -67,7 +70,7 @@ const TravelTop: React.FC = () => {
             <img
               src={tourism4}
               alt="tourism3"
-              className="w-52 h-80 object-cover rounded-2xl"
+              className="w-52 h-80 object-cover rounded-2xl tablet:ml-6 mobile:ml-6"
             />
             <div className="absolute object-cover px-2 py-2 rounded-full bg-orange-500 -bottom-24 left-20">
               <img src={user} alt="user icon" />

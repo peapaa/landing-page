@@ -14,13 +14,13 @@ export default {
         btn: "rgb(103, 89, 217)",
         roses: "rgb(248, 94, 159)",
         orange: "rgb(255, 87, 34)",
-        pink: "rgb(253, 215, 231)",
+        pink: "rgb(253, 215, 52)",
       },
       screens: {
         mobile: { min: "300px", max: "500px" },
         tablet: { min: "501px", max: "767px" },
         laptop: { min: "768px", max: "1024px" },
-        desktop: "1280px",
+        desktop: "1025px",
       },
       fontFamily: {
         roboto: ['"Roboto"', "serif"],
