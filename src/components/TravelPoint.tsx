@@ -5,12 +5,12 @@ import ticket from "../assets/ticket.svg";
 
 const TravelPoint: React.FC = () => {
   return (
-    <div className="mt-20 flex">
-      <div className="w-3/5 relative">
+    <div className="mt-20 flex flex-col items-center justify-center desktop:flex-row">
+      <div className="relative w-full desktop:w-3/5">
         <img
           src={travelPoint}
           alt={travelPoint}
-          className="w-full object-cover"
+          className="w-full object-cover mb-10"
         />
         <button
           className="flex px-6 py-3 justify-center items-center bg-white  absolute top-40 right-10 cursor-auto"
@@ -20,10 +20,12 @@ const TravelPoint: React.FC = () => {
           <p className="ml-3 font-bold text-2xl">Discounted Price</p>
         </button>
       </div>
-      <div className="w-2/5 pl-10 pr-24 ">
+      <div className="desktop:w-2/5 pl-3 desktop:pr-24 laptop:px-10 tablet:px-10 mobile:px-5">
         <div>
-          <p className="text-roses font-bold mb-4">TRAVEL POINT</p>
-          <p className="font-bold text-4xl mb-6">
+          <p className="text-roses font-bold mb-4 flex desktop:block">
+            TRAVEL POINT
+          </p>
+          <p className="font-bold text-4xl mb-6 mobile:text-xl">
             We helping you find your dream location
           </p>
           <p className="font-thin mb-8 text-gray-400">
@@ -31,24 +33,24 @@ const TravelPoint: React.FC = () => {
             It has roots in a piece of classical Latin literature from 45 BC.
           </p>
         </div>
-        <div className="flex flex-wrap relative">
-          <button className="cursor-auto border rounded-3xl px-7 py-7  my-4">
+        <div className="flex flex-wrap items-center justify-center relative">
+          <button className="cursor-auto border rounded-3xl px-7 py-7 mx-2 my-2">
             <p className="font-bold text-orange text-2xl">500+</p>
             <p className="pt-4">Holiday Package</p>
           </button>
-          <button className="cursor-auto border rounded-3xl px-7 py-7 ml-8 my-4">
+          <button className="cursor-auto border rounded-3xl px-7 py-7 mx-2 my-2">
             <p className="font-bold text-orange text-2xl">500+</p>
             <p className="pt-4">Holiday Package</p>
           </button>
-          <button className="cursor-auto border rounded-3xl px-7  py-7  my-4">
+          <button className="cursor-auto border rounded-3xl px-7  py-7 mx-2 my-2">
             <p className="font-bold text-orange text-2xl">500+</p>
             <p className="pt-4">Holiday Package</p>
           </button>
-          <button className="cursor-auto border rounded-3xl px-7  py-7 ml-8 my-4">
+          <button className="cursor-auto border rounded-3xl px-7  py-7 mx-2 my-2">
             <p className="font-bold text-orange text-2xl">500+</p>
             <p className="pt-4">Holiday Package</p>
           </button>
-          <div className="absolute -top-8 -right-8 bg-yellow-300 rounded-full ">
+          <div className="absolute hidden -top-8 -right-0 bg-yellow-300 rounded-full desktop:block ">
             <img
               src={ticket}
               alt={ticket}

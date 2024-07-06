@@ -15,29 +15,35 @@ const Header: React.FC = () => {
         <h1 className="font-bold ml-3 text-2xl">Travlog</h1>
       </div>
 
-      <div className="hidden laptop:flex desktop:flex items-center space-x-6">
-        <ul className="flex space-x-6">
+      <div className="hidden laptop:flex desktop:flex  items-center space-x-6">
+        <ul className="flex space-x-6 ">
           <li className="hover:font-semibold">
-            <a href="/home" className="font-semibold">
+            <a href="/home" className="font-semibold desktop:mx-4">
               Home
             </a>
           </li>
           <li className="hover:font-semibold">
-            <a href="/discover">Discover</a>
+            <a href="/discover" className="desktop:mx-4">
+              Discover
+            </a>
           </li>
           <li className="hover:font-semibold">
-            <a href="/special-deals">Special Deals</a>
+            <a href="/special-deals" className="desktop:mx-4">
+              Special Deals
+            </a>
           </li>
           <li className="hover:font-semibold">
-            <a href="/contact">Contact</a>
+            <a href="/contact" className="desktop:mx-4">
+              Contact
+            </a>
           </li>
         </ul>
-        <div>
-          <span className="font-semibold">Log In</span>
-          <button className="px-5 py-2 bg-btn text-white rounded-3xl ml-8">
-            Sign Up
-          </button>
-        </div>
+      </div>
+      <div className="hidden laptop:flex desktop:flex items-center">
+        <span className="font-semibold">Log In</span>
+        <button className="px-5 py-2 bg-btn text-white rounded-3xl ml-8">
+          Sign Up
+        </button>
       </div>
 
       <div className="laptop:hidden desktop:hidden flex items-center">

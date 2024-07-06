@@ -5,7 +5,6 @@ import schedule from "../assets/schedule.svg";
 import home from "../assets/home.svg";
 import season from "../assets/season2.svg";
 import map from "../assets/map.svg";
-import backgroundWavy from "../assets/wavy2.svg";
 import service from "../assets/background-service.jpg";
 
 interface Service {
@@ -36,17 +35,26 @@ const services: Service[] = [
 ];
 const BestService: React.FC = () => {
   return (
-    <div className=" flex py-20 relative">
-      <div className="w-2/5 pl-28">
-        <p className="text-roses font-semibold mb-6">KEY FEATURES</p>
-        <p className="font-bold text-3xl mb-6">We offer best services</p>
-        <p className="text-base font-thin mb-16 text-gray-400">
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC.
-        </p>
-        <div className="ml-10">
-          {services.map((service) => (
-            <div className="even:border px-8 py-4 even:rounded-3xl flex mt-6">
+    <div
+      className=" flex pt-20 pb-32 relative flex-col desktop:flex-row laptop:px-10 tablet:px-10 mobile:px-5 items-center justify-center
+    desktop:items-start desktop:justify-start"
+    >
+      <div className="desktop:w-2/5 desktop:pl-28">
+        <div className="flex flex-col items-center justify-center desktop:block">
+          <p className="text-roses font-semibold mb-6">KEY FEATURES</p>
+          <p className="font-bold text-3xl mb-6">We offer best services</p>
+          <p className="text-base font-thin mb-16 text-gray-400">
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC.
+          </p>
+        </div>
+        <div className="desktop:ml-10 flex flex-col items-center justify-center">
+          {services.map((service, index) => (
+            <button
+              className="tablet:border laptop:border mobile:border  tablet:rounded-3xl mobile:rounded-3xl laptop:rounded-3xl
+             desktop:even:border px-8 py-4 desktop:even:rounded-3xl flex mt-6 "
+              key={index}
+            >
               <img
                 src={service.icon}
                 alt={service.title}
@@ -59,16 +67,20 @@ const BestService: React.FC = () => {
                 <p className="my-5 font-bold text-xl">{service.title}</p>
                 <p className="font-thin text-sm text-gray-400">{service.des}</p>
               </div>
-            </div>
+            </button>
           ))}
         </div>
       </div>
-      <div className="ml-32 mt-10 relative pr-28">
-        <img src={home} alt={home} className="w-96 h-auto object-cover z-20" />
+      <div className="desktop:ml-32 mt-10 relative desktop:pr-28">
+        <img
+          src={home}
+          alt={home}
+          className="w-96 h-auto object-cover z-20 tablet:w-80 mobile:w-60"
+        />
         <img
           src={season}
           alt={season}
-          className="absolute w-80 h-auto mx-4 my-4 object-cover  -bottom-24 -right-32 "
+          className="absolute w-80 h-auto mx-4 my-4 object-cover  -bottom-24 -right-32 mobile:hidden tablet:w-60"
           style={{
             borderTopLeftRadius: 200,
             borderTopRightRadius: 200,
@@ -78,25 +90,16 @@ const BestService: React.FC = () => {
             borderColor: "white",
           }}
         />
-        <button className="cursor-auto flex px-5 py-3 items-center absolute top-24 right-8 bg-white rounded-full z-20">
+        <button className="cursor-auto flex px-5 py-3 items-center absolute top-24 right-8 bg-white rounded-full z-20  laptop:hidden tablet:hidden mobile:hidden  ">
           <img src={map} alt="map" className="w-8 h-8 object-cover" />
           <p className="font-bold text-xl ml-4">Paradise on Earth</p>
         </button>
         <img
           src={service}
           alt="service"
-          className="w-80 absolute -top-10 -right-20 -z-10 "
+          className="w-80 absolute -top-10 -right-20 -z-10 hidden desktop:block"
         />
       </div>
-      <div
-        className=" bg-no-repeat absolute top-2/3 -z-10"
-        style={{
-          backgroundImage: `url(${backgroundWavy})`,
-          width: "100%",
-          height: "1000px",
-          backgroundPosition: "top right",
-        }}
-      ></div>
     </div>
   );
 };

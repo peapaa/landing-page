@@ -39,13 +39,20 @@ const cardReviews: cardReview[] = [
 ];
 const CardReviewTravel: React.FC = () => {
   return (
-    <div className="px-28 mt-10 flex flex-col">
-      <div className="pt-10 pb-8 w-full flex justify-between items-center">
-        <div>
-          <p className="text-roses text-2xl font-bold mb-3">TOP DESTINATION</p>
-          <p className="font-bold text-4xl">Explore top destination</p>
+    <div className="px-10  mt-10 flex flex-col desktop:px-28">
+      <div
+        className="pt-10 pb-8 w-full flex justify-between items-center 
+      tablet:flex-col mobile:flex-col"
+      >
+        <div className="flex flex-col justify-center items-center">
+          <p className="text-roses text-2xl font-bold mb-3 laptop:text-xl mobile:text-lg">
+            TOP DESTINATION
+          </p>
+          <p className="font-bold text-4xl laptop:text-3xl mobile:text-2xl">
+            Explore top destination
+          </p>
         </div>
-        <div>
+        <div className="flex items-center justify-around tablet:w-full mobile:w-full tablet:mt-6 mobile:mt-4">
           <button>
             <img
               src={arrowLeft}
@@ -62,11 +69,12 @@ const CardReviewTravel: React.FC = () => {
           </button>
         </div>
       </div>
-      <div className="flex items-center justify-center mt-6 relative">
-        {cardReviews.map((review) => (
+      <div className="flex items-center justify-center mt-6 relative flex-wrap ">
+        {cardReviews.map((review, index) => (
           <div
-            className="w-60 shadow-shadowCardReview even:mx-10 hover:cursor-pointer"
+            className="w-60 shadow-shadowCardReview even:mx-10 hover:cursor-pointer my-6 mobile:even:mx-0"
             style={{ borderBottomLeftRadius: 12, borderBottomRightRadius: 12 }}
+            key={index}
           >
             <img
               src={review.image}
@@ -81,7 +89,7 @@ const CardReviewTravel: React.FC = () => {
                   {review.address}
                 </p>
                 <p className="text-orange flex items-center">
-                  <p>{review.star}</p>
+                  <span>{review.star}</span>
                   <img
                     src={star}
                     alt={star}
@@ -98,7 +106,7 @@ const CardReviewTravel: React.FC = () => {
         <img
           src={xLogo}
           alt="xLogo"
-          className="w-20 h-20 object-cover absolute -top-6 right-10"
+          className="hidden desktop:block w-20 h-20 object-cover absolute top-0 right-0"
         />
       </div>
     </div>

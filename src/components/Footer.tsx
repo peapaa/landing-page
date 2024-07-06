@@ -6,9 +6,9 @@ import linkIn from "../assets/linkIn.png";
 
 const Footer: React.FC = () => {
   return (
-    <div className="px-28 mt-28 flex">
-      <div className="w-2/5 ">
-        <span className="flex items-center mb-8">
+    <div className="desktop:px-28 laptop:px-10 tablet:px-10 mobile:px-6 mt-28 flex justify-between tablet:flex-wrap mobile:flex-wrap">
+      <div className="desktop:w-2/5 mb-8">
+        <span className="flex items-center mb-8 px-3">
           <img src={logoTravlog} alt="logoTravlog" className="w-10" />
           <p className="pl-4 text-2xl font-bold">Travlog</p>
         </span>
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           </a>
         </div>
       </div>
-      <div className="w-1/5 ">
+      <div className="desktop:w-1/5 mb-8 px-3">
         <p className="text-2xl font-bold mb-4">Company</p>
         <div className="text-gray-400 ">
           <p className="hover:text-black my-3">About</p>
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
           <p className="hover:text-black my-3">Moblie</p>
         </div>
       </div>
-      <div className="w-1/5 ">
+      <div className="desktop:w-1/5 mb-8 px-3">
         <p className="text-2xl font-bold mb-4">Contact</p>
         <div className="text-gray-400">
           <p className="hover:text-black my-3">Why Travlog?</p>
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
           <p className="hover:text-black my-3">Blog</p>
         </div>
       </div>
-      <div className="w-1/5 ">
+      <div className="desktop:w-1/5 mb-8 px-3 ">
         <p className="text-2xl font-bold mb-4">Meet Us</p>
         <div className="text-gray-400">
           <p className="hover:text-black my-3">+00 92 1234 56789</p>

@@ -23,24 +23,32 @@ const cardServices: cardServices[] = [
     title: "Best Tour Guide",
     des: "What looks like a small patch of purple grass above five feet",
   },
-  {
-    logo: earth,
-    title: "Best Tour Guide",
-    des: "What looks like a small patch of purple grass above five feet",
-  },
+  // {
+  //   logo: earth,
+  //   title: "Best Tour Guide",
+  //   des: "What looks like a small patch of purple grass above five feet",
+  // },
 ];
 
 const ServiceCompany: React.FC = () => {
   return (
-    <div className="pl-28  flex  items-center">
-      <div className="w-1/3">
-        <p className="text-roses text-2xl">Services</p>
-        <p className="text-4xl font-bold mt-4">Our top value</p>
-        <p className="text-4xl font-bold">categories for you</p>
+    <div className="pl-28  flex  items-center mobile:flex-col tablet:flex-col laptop:pl-10 tablet:pl-10 mobile:px-6 ">
+      <div className="desktop:w-1/3 mobile:text-center ">
+        <p className="text-roses text-2xl mr-10 ">Services</p>
+        <p className="text-4xl font-bold mt-4 tablet:mt-0 mb-6">
+          Our top value categories for you
+        </p>
       </div>
-      <div className="flex  overflow-x-scroll">
-        {cardServices.map((card) => (
-          <div className="w-72 px-16 py-12 mt-4 mb-10 ml-6 flex flex-col flex-none items-center justify-center rounded-xl shadow-shadowNew first:shadow-none">
+      <div
+        className="flex overflow-x-scroll laptop:overflow-x-auto mobile:flex-col tablet:px-10 
+      tablet:flex-col tablet:overflow-y-scroll "
+      >
+        {cardServices.map((card, index) => (
+          <div
+            className="w-72 px-16 py-12 mt-4 mb-10 ml-6 flex flex-col flex-none 
+          items-center justify-center rounded-xl shadow-shadowNew desktop:first:shadow-none mobile:w-full mobile:px-14 mobile:ml-0  "
+            key={index}
+          >
             <img src={card.logo} alt={card.title} className="w-11 py-7" />
             <p className="pb-6 text-xl font-bold">{card.title}</p>
             <p className="text-center pb-5 text-gray-400">{card.des}</p>

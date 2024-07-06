@@ -5,21 +5,27 @@ import userIcon from "../assets/user-icon2.png";
 import star from "../assets/star2.png";
 import cricle from "../assets/cricle.svg";
 import cricleRose from "../assets/cricleRose.png";
-
+import backgroundWavy from "../assets/wavy2.svg";
 const Testimonial: React.FC = () => {
   return (
-    <div className="flex px-28 pt-6 w-full items-center justify-around">
-      <button className="border rounded-full px-5 py-5">
-        <img src={arrowLeft} alt="arrowLeft" className="w-6 " />
+    <div className="flex desktop:px-28 pt-0 w-full items-center justify-around relative laptop:px-10 tablet:px-10 mobile:px-5 ">
+      <button className="border rounded-full px-5 py-5 mobile:hidden">
+        <img src={arrowLeft} alt="arrowLeft" className="w-6" />
       </button>
 
       <div className="text-center ">
-        <p className="text-roses font-bold text-xl tracking-[.25em] mb-4">
+        <p className="text-roses font-bold text-xl tracking-[.25em] mb-4 mobile:text-sm">
           TESTIMANIAL
         </p>
-        <p className="font-bold text-4xl">Trust our clients</p>
+        <p className="font-bold text-4xl mb-8 mobile:text-2xl">
+          Trust our clients
+        </p>
         <div className="flex justify-center">
-          <img src={userIcon} alt="userIcon" className="mt-14 mb-12" />
+          <img
+            src={userIcon}
+            alt="userIcon"
+            className="mt-6 mb-12 mobile:w-24"
+          />
         </div>
         <p className="font-semibold text-gray-600 ">
           <span className="text-orange text-xl">Mark Smith</span> / Travel
@@ -58,9 +64,19 @@ const Testimonial: React.FC = () => {
           />
         </div>
       </div>
-      <button className="border rounded-full px-5 py-5 bg-btn shadow-shadowIcon">
-        <img src={arrowRight} alt="arrowRight" className=" w-6" />
+      <button className="border rounded-full px-5 py-5 bg-btn shadow-shadowIcon mobile:hidden">
+        <img src={arrowRight} alt="arrowRight" className=" w-6 " />
       </button>
+      <div
+        className=" bg-no-repeat absolute desktop:-top-1/3 -z-10 w-full"
+        style={{
+          backgroundImage: `url(${backgroundWavy})`,
+          width: "100%",
+          height: "1000px",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      ></div>
     </div>
   );
 };

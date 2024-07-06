@@ -32,7 +32,7 @@ const App: React.FC = () => {
           style={{
             backgroundImage: `url(${backgroundTravelTop})`,
             width: "500px",
-            height: "600px",
+            height: "100%",
           }}
         />
       </div>
