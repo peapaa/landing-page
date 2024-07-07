@@ -43,7 +43,8 @@ const TravelTop: React.FC = () => {
           <button className="px-6 py-3 mr-7 rounded-3xl bg-btn text-white shadow-custom-blue">
             Get Started
           </button>
-          <button className="flex px-6 py-3 rounded-3xl border-solid border">
+          <button className="flex px-6 py-3 rounded-3xl border-solid border relative">
+            {/* <div className="absolute right-[131px] top-[15px] h-[18px] w-[18px] animate-ping rounded-full border-[4px] border-btn"></div> */}
             <img src={playIcon} alt="Play icon" />
             <p className="ml-3">Watch Demo</p>
           </button>
@@ -82,9 +83,10 @@ const TravelTop: React.FC = () => {
               className="w-52 h-80 mobile:h-64 object-cover rounded-2xl tablet:ml-6 mobile:mb-10"
             />
             <div
-              className=" absolute icon-shakes object-cover px-2 py-2 rounded-full -bottom-24 left-20 "
+              className=" absolute  object-cover px-2 py-2 rounded-full -bottom-24 left-20 "
               style={{ backgroundColor: "rgb(255, 87, 34)" }}
             >
+              <div className="absolute right-[5px] top-[5px] h-[39px] w-[39px] animate-ping rounded-full border-[6px] border-orange"></div>
               <img src={user} alt="user icon" className=" user-icon " />
             </div>
             <div className="icon-shakes absolute object-cover px-3 py-2  bottom-10 -right-12 rounded-3xl bg-white text-xs flex items-center">
