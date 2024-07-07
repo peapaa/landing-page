@@ -32,7 +32,7 @@ const cardServices: cardServices[] = [
 
 const ServiceCompany: React.FC = () => {
   return (
-    <div className="pl-28  flex  items-center mobile:flex-col tablet:flex-col laptop:pl-10 tablet:pl-10 mobile:px-6 ">
+    <div className="pl-28  flex  items-center mobile:flex-col tablet:flex-col laptop:px-10 tablet:px-10 mobile:px-6 ">
       <div className="desktop:w-1/3 mobile:text-center ">
         <p className="text-roses text-2xl mr-10 ">Services</p>
         <p className="text-4xl font-bold mt-4 tablet:mt-0 mb-6">

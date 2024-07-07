@@ -8,7 +8,7 @@ import tourism4 from "../assets/tourism4.png";
 import frame1 from "../assets/frame1.png";
 import user from "../assets/user-icon.png";
 import location from "../assets/location-icon.png";
-
+import "./styles.css";
 const TravelTop: React.FC = () => {
   return (
     <div
@@ -17,10 +17,14 @@ const TravelTop: React.FC = () => {
     >
       <div className="flex desktop:col-span-5 desktop:items-start desktop:justify-start tablet,mobile: w-full items-center justify-center flex-col laptop:mt-10 ">
         <span className="flex px-3 py-2  laptop:px-8 laptop:py-3  text-center rounded-3xl bg-white ">
-          <p className="ml-2 mr-3 font-medium laptop:text-2xl text-roses ">
+          <p className="ml-2 mr-3 font-medium laptop:text-2xl text-roses desktop:text-xl">
             Explore the world!
           </p>
-          <img src={bag} alt="bag-icon" className="pl-1 laptop: w-8" />
+          <img
+            src={bag}
+            alt="bag-icon"
+            className="pl-1 laptop: w-8 shake-animation"
+          />
         </span>
         <div className="font-bold text-6xl my-6 mobile:text-4xl">
           <p className="mt-4 ">
@@ -41,7 +45,7 @@ const TravelTop: React.FC = () => {
           </button>
           <button className="flex px-6 py-3 rounded-3xl border-solid border">
             <img src={playIcon} alt="Play icon" />
-            <p>Watch Demo</p>
+            <p className="ml-3">Watch Demo</p>
           </button>
         </div>
       </div>
@@ -60,7 +64,7 @@ const TravelTop: React.FC = () => {
               alt="tourism1"
               className="w-52 h-64 object-cover rounded-2xl mb-8 "
             />
-            <div className="absolute object-cover px-2 py-2 rounded-full bg-roses bottom-1 -left-6">
+            <div className="icon-shakes absolute object-cover px-2 py-2 rounded-full bg-roses bottom-1 -left-6">
               <img src={frame1} alt="frame icon" />
             </div>
           </div>
@@ -78,12 +82,12 @@ const TravelTop: React.FC = () => {
               className="w-52 h-80 mobile:h-64 object-cover rounded-2xl tablet:ml-6 mobile:mb-10"
             />
             <div
-              className="absolute object-cover px-2 py-2 rounded-full -bottom-24 left-20"
+              className=" absolute icon-shakes object-cover px-2 py-2 rounded-full -bottom-24 left-20 "
               style={{ backgroundColor: "rgb(255, 87, 34)" }}
             >
-              <img src={user} alt="user icon" />
+              <img src={user} alt="user icon" className=" user-icon " />
             </div>
-            <div className="absolute object-cover px-3 py-2  bottom-10 -right-12 rounded-3xl bg-white text-xs flex items-center">
+            <div className="icon-shakes absolute object-cover px-3 py-2  bottom-10 -right-12 rounded-3xl bg-white text-xs flex items-center">
               <img src={location} alt="location icon" className="" />
               <span>Top Places</span>
             </div>

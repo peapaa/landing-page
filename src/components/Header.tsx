@@ -66,7 +66,7 @@ const Header: React.FC = () => {
       </div>
 
       <div
-        className={`laptop:hidden desktop:hidden absolute top-0 left-0 w-full  bg-white transition-transform transform ${
+        className={`laptop:hidden desktop:hidden fixed inset-0  z-30 bg-white transition-transform transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
