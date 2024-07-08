@@ -52,7 +52,7 @@ const BestService: React.FC = () => {
           {services.map((service, index) => (
             <button
               className="tablet:border laptop:border mobile:border  tablet:rounded-3xl mobile:rounded-3xl laptop:rounded-3xl
-             desktop:even:border px-8 py-4 desktop:even:rounded-3xl flex mt-6 "
+             desktop:even:border px-8 py-4 desktop:even:rounded-3xl flex items-center mt-6 mobile:px-4 "
               key={index}
             >
               <img
@@ -63,7 +63,7 @@ const BestService: React.FC = () => {
                   backgroundColor: `${service.backgroundColor}`,
                 }}
               />
-              <div className="flex flex-col  justify-center ml-8">
+              <div className="flex flex-col items-center justify-center ml-8 mobile:ml-2">
                 <p className="my-5 font-bold text-xl">{service.title}</p>
                 <p className="font-thin text-sm text-gray-400">{service.des}</p>
               </div>
