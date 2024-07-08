@@ -39,11 +39,11 @@ const TravelTop: React.FC = () => {
             possible
           </p>
         </div>
-        <div className="flex mt-8 ">
-          <button className="px-6 py-3 mr-7 rounded-3xl bg-btn text-white shadow-custom-blue">
+        <div className="flex mt-8 mobile:flex-col">
+          <button className="px-6 py-3 mr-7 rounded-3xl bg-btn text-white shadow-custom-blue mobile:mb-6 mobile:w-full">
             Get Started
           </button>
-          <button className="flex px-6 py-3 rounded-3xl border-solid border relative">
+          <button className="flex px-6 py-3 rounded-3xl border-solid border relative mobile:w-full">
             {/* <div className="absolute right-[131px] top-[15px] h-[18px] w-[18px] animate-ping rounded-full border-[4px] border-btn"></div> */}
             <img src={playIcon} alt="Play icon" />
             <p className="ml-3">Watch Demo</p>
