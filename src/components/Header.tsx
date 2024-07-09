@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import vector from "../assets/vector.png";
+import vector from "../assets/images/logo/vector.png";
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +18,7 @@ const Header: React.FC = () => {
       <div className="hidden laptop:flex desktop:flex  items-center space-x-6">
         <ul className="flex space-x-6 ">
           <li className="hover:font-semibold">
-            <a href="/home" className="font-semibold desktop:mx-4">
+            <a href="/home" className=" desktop:mx-4">
               Home
             </a>
           </li>
@@ -40,8 +40,10 @@ const Header: React.FC = () => {
         </ul>
       </div>
       <div className="hidden laptop:flex desktop:flex items-center">
-        <span className="font-semibold">Log In</span>
-        <button className="px-5 py-2 bg-btn text-white rounded-3xl ml-8">
+        <button className="font-semibold px-5 py-2 rounded-3xl hover:bg-btn hover:font-normal hover:text-white">
+          Log In
+        </button>
+        <button className=" px-5 py-2 rounded-3xl text-white bg-btn hover:bg-btnHover ml-8">
           Sign Up
         </button>
       </div>

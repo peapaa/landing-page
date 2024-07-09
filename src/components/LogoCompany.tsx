@@ -1,11 +1,11 @@
 import React from "react";
 import "./styles.css";
-import logoTripadvisor from "../assets/logo-tripadvisor.png";
-import logoExpedia from "../assets/logo-expedia.png";
-import logoBooking from "../assets/logo-booking.png";
-import logoAirbnb from "../assets/logo-airbnb.png";
-import logoOrbitz from "../assets/logo-orbitz.png";
-import triangle from "../assets/triangle-icon.png";
+import logoTripadvisor from "../assets/images/company/logo-tripadvisor.png";
+import logoExpedia from "../assets/images/company/logo-expedia.png";
+import logoBooking from "../assets/images/company/logo-booking.png";
+import logoAirbnb from "../assets/images/company/logo-airbnb.png";
+import logoOrbitz from "../assets/images/company/logo-orbitz.png";
+import triangle from "../assets/images/company/triangle-icon.png";
 
 const logos = [
   logoTripadvisor,
@@ -33,7 +33,7 @@ const LogoCompany: React.FC = () => {
       <img
         src={triangle}
         alt="triangle-icon"
-        className="absolute w-12 object-cover -top-20 left-12 mobile:w-10"
+        className="absolute w-12 object-cover -top-20 left-12 mobile:w-10 mobile:hidden"
       />
     </div>
   );

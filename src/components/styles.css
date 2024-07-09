@@ -6,6 +6,9 @@
   animation: bubble 1.6s ease-in-out infinite;
 }
 
+.text-blur {
+  @apply font-inter text-gray-400;
+}
 /* .user-animation {
   position: relative;
   border: 4px solid rgb(255, 87, 34);

@@ -11,7 +11,8 @@ export default {
         current: "currentColor",
         metal: "#ecebff",
         white: "#ffffff",
-        btn: "rgb(103, 89, 217)",
+        btn: "rgb(93, 80, 198)",
+        btnHover: "rgb(127, 112, 228)",
         roses: "rgb(248, 94, 159)",
         orange: "rgb(255, 87, 34)",
         pink: "rgb(253, 215, 52)",
@@ -19,11 +20,12 @@ export default {
       screens: {
         mobile: { min: "300px", max: "500px" },
         tablet: { min: "501px", max: "767px" },
-        laptop: { min: "768px", max: "1024px" },
-        desktop: "1025px",
+        laptop: { min: "768px", max: "1150px" },
+        desktop: "1150px",
       },
       fontFamily: {
-        roboto: ['"Roboto"', "serif"],
+        roboto: ["Roboto", "serif"],
+        inter: ["Inter", "sans-serif"],
       },
       boxShadow: {
         "custom-blue": "0 8px 8px rgba(103, 89, 217, 0.5)",
