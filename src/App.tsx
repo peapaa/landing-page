@@ -37,7 +37,7 @@ const App: React.FC = () => {
             }}
           />
         </div>
-        {/* <CardReviewTravel /> */}
+        <CardReviewTravel />
         <TravelPoint />
         <BestService />
         <Testimonial />
