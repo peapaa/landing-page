@@ -3,7 +3,7 @@ import userIcon from "../assets/images/customer-review/user-icon2.png";
 import star from "../assets/images/customer-review/star2.png";
 import cricle from "../assets/images/customer-review/cricle.svg";
 import cricleRose from "../assets/images/customer-review/cricleRose.png";
-import backgroundWavy from "../assets/images/customer-review/wavy2.svg";
+import backgroundWavy from "../assets/images/customer-review/wavy3.png";
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 
 interface User {
