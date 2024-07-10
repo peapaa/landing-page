@@ -13,7 +13,7 @@ const TravelTop: React.FC = () => {
   return (
     <div
       className="desktop:pl-28 desktop:pr-10 desktop:grid desktop:grid-cols-12 flex laptop:flex-col laptop:px-0 
-      tablet:px-0 mobile:px-5 items-center justify-center tablet:flex-col mobile:flex-col "
+      tablet:px-4 mobile:px-5 items-center justify-center tablet:flex-col mobile:flex-col "
     >
       <div className="flex desktop:col-span-5 desktop:items-start desktop:justify-start tablet,mobile: w-full items-center justify-center flex-col laptop:mt-10 ">
         <span className="flex px-3 py-2  laptop:px-8 laptop:py-3  text-center rounded-3xl bg-white ">
@@ -26,12 +26,15 @@ const TravelTop: React.FC = () => {
             className="pl-1 laptop: w-8 shake-animation"
           />
         </span>
-        <div className="font-bold text-6xl my-6 mobile:text-4xl laptop:flex laptop:flex-wrap laptop:px-12 laptop:justify-center">
-          <p className="mt-4 ">
-            Travel <span className="text-roses laptop:mr-3"> top </span>
-          </p>
-          <p className="mt-4 text-roses"> destination </p>
-          <p className="mt-4 laptop:ml-3"> of the world </p>
+        <div>
+          <h2
+            className="font-bold text-7xl my-6 mobile:text-3xl flex flex-wrap items-center laptop:px-12 justify-center desktop:block 
+        tablet:text-4xl laptop:text-5xl desktop:leading-[100px] laptop:leading-[60px]"
+          >
+            Travel <span className="text-roses ml-2 desktop:ml-0"> top </span>{" "}
+            <span className="text-roses mx-2 desktop:mx-0"> destination </span>{" "}
+            of the world
+          </h2>
         </div>
         <div className="laptop:w-3/5">
           <p className=" text-blur text-center  desktop:text-start">

@@ -40,7 +40,7 @@ const BestService: React.FC = () => {
       className=" flex pt-20 pb-24 relative flex-col desktop:flex-row laptop:px-10 tablet:px-10 mobile:px-5 items-center justify-center
     desktop:items-start desktop:justify-start mobile:pb-10"
     >
-      <div className="desktop:w-2/5 desktop:pl-28">
+      <div className="desktop:w-[46%] desktop:pl-28">
         <div className="flex flex-col items-center justify-center desktop:block">
           <p className="text-roses font-semibold mb-6 text-2xl">KEY FEATURES</p>
           <p className="font-bold text-[44px] mb-6 tablet:text-4xl mobile:text-3xl">
@@ -51,7 +51,7 @@ const BestService: React.FC = () => {
             It has roots in a piece of classical Latin literature from 45 BC.
           </p>
         </div>
-        <div className=" flex flex-col items-center justify-center">
+        <div className=" flex flex-col items-center justify-center desktop:items-start">
           {services.map((service, index) => (
             <button
               className="border rounded-3xl

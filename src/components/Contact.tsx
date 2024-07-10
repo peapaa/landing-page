@@ -14,26 +14,26 @@ const Contact: React.FC = () => {
       />
       <div className="mt-20 py-6 text-center bg-[#FDF5F9] rounded-3xl ">
         <div>
-          <p className="mb-6 mt-10 text-roses text-xl font-bold tracking-[3px] tablet:text-lg mobile:text-base">
+          <p className="mb-6 mt-10 text-roses text-xl font-bold tracking-[3px] tablet:text-lg mobile:text-sm">
             SUBSCRIBE TO OUR NEWSLETTER
           </p>
-          <p className="text-5xl mb-4 font-bold laptop:text-4xl tablet:text-3xl mobile:text-2xl px-20 mobile:px-4 tablet:px-8">
+          <p className="text-5xl mb-4 font-bold laptop:text-4xl tablet:text-3xl mobile:text-xl px-20 mobile:px-4 tablet:px-8">
             Prepare yourself & lets explore the beauty of the world
           </p>
         </div>
         <div className="relative my-12 px-20 flex justify-center items-center tablet:flex-col mobile:flex-col mobile:px-4 tablet:px-8">
           <div className="flex relative w-full ">
-            <MdEmail className="absolute text-[40px] text-gray-400 left-4 top-1/4 desktop:top-7 tablet:top-5 mobile:top-5 mobile:text-[28px]" />
+            <MdEmail className="absolute text-[40px] text-gray-400 left-4 top-1/4 desktop:top-7 tablet:top-4 mobile:top-5 mobile:text-[28px]" />
             <input
               type="text"
               placeholder="Your Email"
-              className="h-20 text-2xl flex-grow px-16 tablet:mb-8 mobile:mb-8 outline-none rounded-2xl tablet:w-full mobile:w-full
-              desktop:h-24 mobile:h-16 mobile:text-xl"
+              className="h-20 text-2xl flex-grow px-16 tablet:mb-4 mobile:mb-4 outline-none rounded-2xl tablet:w-full mobile:w-full
+              desktop:h-24 mobile:h-16 mobile:text-xl tablet:h-[70px]"
             />
           </div>
           <button
             className="bg-btn  py-8 text-3xl text-white tablet:w-full mobile:w-full desktop:ml-12 laptop:ml-12 rounded-[36px] desktop:px-10 laptop:px-10
-          laptop:py-6 tablet:py-5 mobile:py-4 mobile:text-xl  "
+          laptop:py-6 tablet:py-5 mobile:py-4 mobile:text-xl tablet:h-[70px] "
           >
             Subcribe
           </button>
