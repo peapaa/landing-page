@@ -1,7 +1,9 @@
 import React from "react";
 import userIcon from "../assets/images/customer-review/user-icon2.png";
 import star from "../assets/images/customer-review/star2.png";
+
 import backgroundWavy from "../assets/images/customer-review/wavy3.png";
+
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 
 import { Swiper, SwiperSlide } from "swiper/react";

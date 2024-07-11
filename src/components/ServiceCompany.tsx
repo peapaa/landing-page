@@ -97,7 +97,7 @@ const ServiceCompany: React.FC = () => {
         </Swiper>
       </div>
       <div
-        className="bg-no-repeat absolute -top-1/3 right-0 -z-10"
+        className="bg-no-repeat absolute -top-1/3 right-0 -z-20"
         style={{
           backgroundImage: `url(${backgroundTravelTop})`,
           width: "500px",
