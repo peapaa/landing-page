@@ -77,6 +77,7 @@ const CardReviewTravel: React.FC = () => {
       <div className="mx-3">
         <Swiper
           slidesPerView={1}
+          spaceBetween={10}
           loop={true}
           navigation={{
             prevEl: ".btn-prev",
