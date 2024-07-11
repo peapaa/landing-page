@@ -77,7 +77,6 @@ const CardReviewTravel: React.FC = () => {
       <div className="mx-3">
         <Swiper
           slidesPerView={1}
-          spaceBetween={10}
           loop={true}
           navigation={{
             prevEl: ".btn-prev",
@@ -87,12 +86,10 @@ const CardReviewTravel: React.FC = () => {
           breakpoints={{
             767: {
               slidesPerView: 2,
-              spaceBetween: 30,
             },
 
             1024: {
               slidesPerView: 3,
-              spaceBetween: 30,
             },
           }}
         >

@@ -28,14 +28,14 @@ const App: React.FC = () => {
         <div className="relative">
           <LogoCompany />
           <ServiceCompany />
-          <div
+          {/* <div
             className="bg-no-repeat absolute -top-1/3 right-0 -z-10"
             style={{
               backgroundImage: `url(${backgroundTravelTop})`,
               width: "500px",
               height: "100%",
             }}
-          />
+          /> */}
         </div>
         <CardReviewTravel />
         <TravelPoint />

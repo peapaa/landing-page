@@ -13,13 +13,21 @@
   margin-top: 10px;
   background-color: red;
 } */
-.service .swiper {
+/* .service .swiper {
   padding: 0 20px;
-}
+} */
 .swiper-pagination-customer .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
   background-color: rgb(250, 108, 207);
+}
+
+.slider-service .swiper-wrapper {
+  @apply gap-x-[20px] flex justify-center items-center;
+}
+
+.slider-service .swiper-slide {
+  @apply bg-white;
 }
 
 .swiper-pagination-customer .swiper-pagination-bullet-active {
