@@ -9,22 +9,21 @@
 .text-blur {
   @apply font-inter text-gray-400;
 }
-/* .pagination {
-  margin-top: 10px;
-  background-color: red;
-} */
-.service .swiper {
-  padding: 0 20px;
-}
+
 .swiper-pagination-customer .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
   background-color: rgb(250, 108, 207);
 }
 
+/* .card-review .swiper-wrapper {
+  @apply gap-x-[10px] px-4;
+} */
+
 .swiper-pagination-customer .swiper-pagination-bullet-active {
   background-color: "rgb(248, 94, 159)";
 }
+
 @keyframes jump-up {
   0%,
   100% {

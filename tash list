@@ -1,0 +1,95 @@
+[33mcommit 603da98ab1e0cb00eecde821eb999df234cdc079[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: DaoDucThien <thienqxa99@gmail.com>
+Date:   Thu Jul 11 10:08:44 2024 +0700
+
+    add swiper 7
+
+[33mcommit 9bf23168eee2093b7d082b7fd3198abca9f78bc1[m
+Author: DaoDucThien <thienqxa99@gmail.com>
+Date:   Thu Jul 11 10:07:50 2024 +0700
+
+    add swiper 6
+
+[33mcommit c81367c3bd659633b90e1af62b4c213af994fc09[m
+Author: DaoDucThien <thienqxa99@gmail.com>
+Date:   Tue Jul 9 16:14:18 2024 +0700
+
+    add fix background wavy of testimonal
+
+[33mcommit 5a717a6e3c5ec51883efda9b428cf9546f55f0cf[m
+Author: DaoDucThien <thienqxa99@gmail.com>
+Date:   Tue Jul 9 16:06:06 2024 +0700
+
+    add fix  responsive
+
+[33mcommit 34fe831ccf2e5e66f5ef3abfbc92144e36d70554[m
+Author: DaoDucThien <thienqxa99@gmail.com>
+Date:   Tue Jul 9 16:04:07 2024 +0700
+
+    add fix  responsive
+
+[33mcommit fe4e3fcf7089e3549f26c2cf64481ba81630ea15[m
+Author: DaoDucThien <thienqxa99@gmail.com>
+Date:   Mon Jul 8 11:42:10 2024 +0700
+
+    add responsive for component TravelTop
+
+[33mcommit 2702504ec0755dacf7697159b47359b2ca6d6ad8[m
+Author: DaoDucThien <thienqxa99@gmail.com>
+Date:   Mon Jul 8 10:07:57 2024 +0700
+
+    add responsive for component BestService
+
+[33mcommit afa8560dc0e3b38f4b63eb5d226672bd40206981[m
+Author: DaoDucThien <thienqxa99@gmail.com>
+Date:   Sun Jul 7 15:31:27 2024 +0700
+
+    add responsive for icon user
+
+[33mcommit dfc1eaae3b7d4b75028160151ccb6769f34f456b[m
+Author: DaoDucThien <thienqxa99@gmail.com>
+Date:   Sun Jul 7 15:18:17 2024 +0700
+
+    add responsive for icon
+
+[33mcommit feaee17fb9555e3397055d91773a84eaf2b6e144[m
+Author: DaoDucThien <thienqxa99@gmail.com>
+Date:   Sat Jul 6 23:32:09 2024 +0700
+
+    add responsive full screens
+
+[33mcommit a61e24bcd16ded236ff579aeac33e947718ca399[m
+Author: DaoDucThien <thienqxa99@gmail.com>
+Date:   Fri Jul 5 17:01:26 2024 +0700
+
+    add responsive travel top and header
+
+[33mcommit 63ce3efe5647fbad2ecc1b3004992d753e83cd4f[m
+Author: DaoDucThien <thienqxa99@gmail.com>
+Date:   Fri Jul 5 15:17:48 2024 +0700
+
+    add contact mail and footer
+
+[33mcommit 034fc898395e5c360312f3c096263f495c3ef381[m
+Author: DaoDucThien <thienqxa99@gmail.com>
+Date:   Fri Jul 5 10:22:48 2024 +0700
+
+    add testimonial
+
+[33mcommit f5c1209a2e2b25926c9282147c6efff1abbcc2d9[m
+Author: DaoDucThien <thienqxa99@gmail.com>
+Date:   Thu Jul 4 17:28:42 2024 +0700
+
+    add travel top
+
+[33mcommit 63e661cb71b06bab214cfca773f0fc6652ecee86[m
+Author: DaoDucThien <thienqxa99@gmail.com>
+Date:   Wed Jul 3 17:33:56 2024 +0700
+
+    add header, traveltop
+
+[33mcommit da7f8935d05c33d07b5f3fe47da6bc106455aa4c[m
+Author: DaoDucThien <thienqxa99@gmail.com>
+Date:   Tue Jul 2 16:46:03 2024 +0700
+
+    create project with vite + tailwind

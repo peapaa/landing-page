@@ -55,7 +55,7 @@ const Testimonial: React.FC = () => {
         <IoIosArrowRoundBack className="hidden desktop:block w-20 h-20 border px-5 py-5 rounded-full text-black hover:text-white hover:bg-btn mr-6 bg-white" />
       </button>
 
-      <div className="text-center max-w-[1000px] w-full">
+      <div className="text-center min-w-[300px] w-full">
         <p className="text-roses font-bold text-2xl tracking-[.25em] mb-16 mobile:text-sm tablet:text-xl laptop:mb-4 mobile:mb-3">
           TESTIMANIAL
         </p>

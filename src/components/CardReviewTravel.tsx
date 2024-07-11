@@ -51,7 +51,7 @@ const cardReviews: cardReview[] = [
 ];
 const CardReviewTravel: React.FC = () => {
   return (
-    <div className="px-6 mt-10 flex flex-col desktop:px-28 relative mobile:px-0">
+    <div className="px-6 mt-10 flex flex-col desktop:px-28 relative mobile:px-0 tablet:px-0 laptop:px-0">
       <div
         className="pt-10  w-full flex justify-center desktop:justify-between items-center  
       tablet:flex-col mobile:flex-col"
@@ -77,29 +77,27 @@ const CardReviewTravel: React.FC = () => {
       <div className="mx-3">
         <Swiper
           slidesPerView={1}
-          spaceBetween={10}
           loop={true}
           navigation={{
             prevEl: ".btn-prev",
             nextEl: ".btn-next",
           }}
+          className="card-review"
           modules={[Navigation]}
           breakpoints={{
             767: {
               slidesPerView: 2,
-              spaceBetween: 30,
             },
 
             1024: {
               slidesPerView: 3,
-              spaceBetween: 30,
             },
           }}
         >
           {cardReviews.map((review, index) => (
             <SwiperSlide key={index} className="px-2">
               <div
-                className="w-full  shadow-xl hover:cursor-pointer my-20 "
+                className="w-full shadow-xl hover:cursor-pointer my-20 "
                 style={{
                   borderBottomLeftRadius: 32,
                   borderBottomRightRadius: 32,
