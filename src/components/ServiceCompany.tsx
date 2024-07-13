@@ -56,11 +56,12 @@ const ServiceCompany: React.FC = () => {
         </p>
       </div>
 
-      <div className="w-full desktop:w-2/3 desktop:px-6 flex items-center justify-center service ">
+      <div className="w-full desktop:w-2/3  desktop:px-6 flex items-center justify-center service ">
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
           loop={true}
+          centeredSlides={true}
           breakpoints={{
             550: {
               slidesPerView: 2,
@@ -78,7 +79,7 @@ const ServiceCompany: React.FC = () => {
               <Link to={card.href}>
                 <div
                   className={
-                    "shadow-lg desktop:max-w-[280px]  w-full h-[360px] my-4 flex flex-col flex-none mobile:px-3 mobile:py-8 tablet:px-2 items-center justify-center rounded-xl "
+                    " desktop:max-w-[280px] w-full h-[320px] mx-1 my-4 flex flex-col flex-none  mobile:py-8  items-center justify-center rounded-xl "
                   }
                 >
                   <img

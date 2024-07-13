@@ -15,10 +15,12 @@
   height: 20px;
   background-color: rgb(250, 108, 207);
 }
-
-/* .card-review .swiper-wrapper {
-  @apply gap-x-[10px] px-4;
-} */
+.service .swiper-wrapper {
+  margin-bottom: 12px;
+}
+.service .swiper-slide.swiper-slide-active {
+  @apply shadow-lg rounded-2xl;
+}
 
 .swiper-pagination-customer .swiper-pagination-bullet-active {
   background-color: "rgb(248, 94, 159)";

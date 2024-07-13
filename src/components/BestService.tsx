@@ -54,8 +54,8 @@ const BestService: React.FC = () => {
         <div className=" flex flex-col items-center justify-center desktop:items-start">
           {services.map((service, index) => (
             <button
-              className="border rounded-3xl
-              px-8 py-4  flex items-center mt-6 mobile:px-4 "
+              className=" rounded-3xl hover:border
+              px-8 py-4  flex items-center mobile:px-4 "
               key={index}
             >
               <img
