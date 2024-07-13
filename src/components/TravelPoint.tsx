@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import travelPoint from "../assets/images/travel-point/travel-point.png";
 import setUpIcon from "../assets/images/travel-point/setup-icon.svg";
 import ticket from "../assets/images/travel-point/ticket.svg";
@@ -36,8 +36,8 @@ const travelPoints: TravelPointType[] = [
 ];
 const TravelPoint: React.FC = () => {
   const { ref, inView } = useInView({
-    triggerOnce: true, // Chỉ kích hoạt một lần khi vào vùng nhìn thấy
-    threshold: 0.1, // Tỷ lệ phần tử cần nhìn thấy để kích hoạt
+    triggerOnce: true,
+    threshold: 0.1,
   });
 
   return (
