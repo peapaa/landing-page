@@ -60,6 +60,12 @@ const ServiceCompany: React.FC = () => {
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
+          autoplay={{
+            delay: 0, // Độ trễ giữa các slide
+            disableOnInteraction: false,
+            // reverseDirection: false,
+          }}
+          speed={2000}
           loop={true}
           centeredSlides={true}
           breakpoints={{
